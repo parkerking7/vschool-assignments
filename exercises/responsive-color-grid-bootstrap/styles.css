@@ -1,0 +1,25 @@
+.first-bar {
+	background-color:#F5C6D6;
+	height: 100px;
+	border:5px solid #fff;
+}
+.second-bar {
+	background-color:#EE2E84;
+	height: 100px;	
+	border:5px solid #fff;
+}
+.third-bar{
+	background-color:#85CFD8;
+	height: 100px;	
+	border:5px solid #fff;
+}
+.fourth-bar-1{
+	background-color:#8DC63F;
+	height: 100px;	
+	border:5px solid #fff;
+}
+.fourth-bar-2{
+	background-color:#E76E34;
+	height: 100px;	
+	border:5px solid #fff;
+}

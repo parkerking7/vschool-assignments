@@ -1,0 +1,28 @@
+*{
+	font-family:open-sans;
+}
+.btn{
+	width:100%;
+	margin:5px ;
+	font-size:20px;
+	background-color:bisque;
+	border-color:black;
+}
+.input{
+	width:100%;
+	margin:5px;
+	border-color:black;
+}
+.answer{
+	padding-top: 25px;
+	font-size: 25px;
+}
+h1{
+	width:100%;
+	background-color:beige;
+	padding:20px;
+	font-size:50px;
+}
+body{
+	background-color:coral;
+}

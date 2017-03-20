@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>High-Score Haven</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>High-Score Haven</h1>
+	<p>Welcome to High Score Haven! We would like you to put in your information so we can get your high score added to our list!</p>
+	<p><b>Score based games only</b></p>
+	<form name="scoreTable" id="form">
+		<table id="formTable">
+
+
+			<tr>
+				<td class="leftTable"><label class="left-label" for="name">Name :</label></td>
+				<td><input class="right-label" type="text" id="name" name="name" placeholder="Your name..." required></td>
+			</tr>
+			<tr>
+				<td class="leftTable"><label class="left-label" for="game">Game :</label></td>
+				<td><input class="right-label" type="text" id="game" name="game" placeholder="The game..." required></td>
+
+			</tr>
+			<tr>
+				<td class="leftTable"><label class="left-label" for="total">Date of High Score:</label></td>
+				<td><input class="right-label" type="date" id="date" name="date" required></td>
+			</tr>
+			<tr>
+				<td class="leftTable"><label class="left-label" for="highScore">High Score:</label></td>
+				<td><input class="right-label" type="number" id="number" name="score" placeholder="Your high score..." required></td>
+			</tr>
+		</table>
+		<table id="trashTable">
+			<tr>
+				<td class="trashBox"><input class="right-label" type="checkbox" name="trash" value="trash" id="checkBox">Randomly Selected trash talking?</td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="Submit" id="submit"></td>
+			</tr>
+
+		</table>
+	</form>
+	<table id="scoreTable">
+		<tr>
+			<th>Player Name</th>
+			<th>Game Played</th>
+			<th>Date of High Score</th>
+			<th>High Score</th>
+			<th>Trash Message</th>
+		</tr>
+	</table>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>

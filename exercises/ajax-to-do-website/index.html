@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row" id="list">
+
+			<div class="col-xs-12">
+				<h2>Todo List</h2>
+
+
+				<form name ="form" class="form">
+					<input class="col-xs-4 text-box" name="name" id="name" type=text placeholder="Item Name...">
+					<input class="col-xs-4 text-box" name="price" id="price" type=number placeholder="Item Price in $...">
+					<input class="col-xs-4 text-box" name="description" id="description" type=text placeholder="Item Description...">
+					<button type="button" class="btn btn-success col-xs-4">Add Todo</button>
+					<input type="text" id="imgUrl"class="text-box col-xs-offset-4 col-xs-4" placeholder="Image URL...">
+				</form>
+				<div class="container">
+					<div class="row">
+					</div>
+					<ul class=" col-xs-11 uList">
+					
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="list col-xs-12">
+				<ul class="list">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>

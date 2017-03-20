@@ -1,0 +1,46 @@
+h1{
+	text-align: center;
+	width:100%
+}
+.square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: darkslategrey;
+	margin:auto;
+}
+.blue-square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: blue;
+	margin:auto;
+}
+.red-square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: red;
+	margin:auto;
+}
+.yellow-square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: yellow;
+	margin:auto;
+}
+.green-square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: green;
+	margin:auto;
+}
+.orange-square{
+	height: 500px;
+	width: 500px;
+	align-content: center;
+	background-color: orange;
+	margin:auto;
+}

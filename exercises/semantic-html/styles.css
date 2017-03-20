@@ -1,0 +1,38 @@
+nav{
+	display: inline-block;
+	width: 20%;
+	line-height: 45px;
+	text-align:center;
+	height:80%;
+	border-color: black;
+	border: 15px;
+}
+header{
+	text-align: center;
+	text-decoration: underline;
+}
+.footer{
+	text-align: center;
+	width:100%;
+	bottom:50px;
+	height:30px;
+	position: fixed;
+}
+img{
+	height:80%;
+	width: 20%;
+	align-self: auto;
+	margin: 10px;
+	padding: 5px;
+}
+.upper-text{
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.navbar-item:hover{
+	background-color:coral;
+}
+img:hover{
+	background-color:blue;
+}

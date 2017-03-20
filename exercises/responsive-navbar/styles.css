@@ -1,0 +1,49 @@
+body {
+	color: #fff;
+}
+
+.container {
+	background-image: url(./img/background.jpg);
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+}
+
+.social {
+	height: 30px;
+}
+
+.mobile-view {
+	display: none;
+}
+
+nav.desktop-view ul {
+	display: flex;
+	justify-content: space-around;
+	font-size: 30px;
+}
+
+.banner {
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	padding-top: 200px;
+}
+.hamburger{
+	font-size:30px;
+}
+@media screen and (max-width: 875px) {
+	nav.desktop-view ul{
+		display: none;
+	}
+}
+@media screen and (max-width: 875px){
+	nav.mobile-view{
+		display:block;
+		padding: 10px
+	}
+	.social{
+		float:right;
+		padding-right: 5px;
+	}
+}

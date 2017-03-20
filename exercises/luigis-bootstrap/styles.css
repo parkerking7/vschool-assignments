@@ -1,0 +1,87 @@
+@font-face {
+	font-family: marioFont;
+	src: url("SuperMario256.ttf")
+}
+
+.name,
+.about {
+	font-family: marioFont;
+	color:#EB1F22;
+}
+
+
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+}
+
+.header {
+	background-color: #FFDA09;
+	height: 100px;
+	font-size: 4em;
+	text-align: left;
+	
+}
+
+.content {
+	height: 25em;
+	background-color: #EB1F22;
+}
+
+.about-me {
+	height: 15em;
+}
+
+
+
+
+.footer {
+/*	right: 0px;*/
+	bottom: 0px;
+/*	left: 0px;*/
+/*	padding: 1rem;*/
+	background-color: #FFDA09;
+}
+
+.name {
+	display: flex;
+	vertical-align: baseline;
+}
+
+.shroom {
+	/*	padding-top */
+	height: 50px;
+	width: 50px;
+	min-height: 100%;
+	position: relative;
+}
+.luigi {
+	display:flex;
+	margin-top:2.5em;
+	height:20em;
+	width: 20em;
+	padding-left:33%;
+}
+.note{
+	width:250px;
+	text-align: center;
+	font-size:20px;
+	font-weight: bold;
+	color:#EB1F22;
+	font-family: impact;
+}
+.about{
+	text-align: center;
+}
+.information{
+	display: flex;
+	justify-content: center;
+	margin-top:-100px;
+	left:0;
+	top:50%;
+}
+.height-fix{
+	height:100%;
+}

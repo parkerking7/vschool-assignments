@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+
+
+	<title> jQuery Pest Control</title>
+</head>
+
+<body id="body">
+	<header>
+		<div class="col-xs-12 text-center" id="header-text">
+			<h1> jQuery Pest Control</h1>
+		</div>
+	</header>
+	<article id="upper-background">
+		<div class="container" id="baddies">
+			<div class="col-xs-12 col-sm-4 baddies" id="goomba"><img src="https://cdn.staticneo.com/w/mario/thumb/9/91/Goomba.jpg/200px-Goomba.jpg">
+				<p class="text-center img-text">Goomba
+					<p>
+						<p class="pricing">Pricing: &nbsp;5 Coins</p>
+						<p class="total-caught">Total Caught: &nbsp;
+							<input type="number" id="goomba-tc" class="text-box">
+						</p>
+						<button type="button" class="button" id="goomba-button">Get Quote</button>
+			</div>
+			<div class="col-xs-12 col-sm-4 baddies" id="bob-omb"><img src="http://rs231.pbsrc.com/albums/ee51/ShadowMark-182/Nintendo%20Pics/Bob-omb.jpg~c200">
+				<p class="text-center img-text">Bob-omb
+					<p>
+						<p class="pricing">Pricing: &nbsp;7 Coins</p>
+						<p class="total-caught">Total Caught: &nbsp;
+							<input type="number" id="bob-omb-tc" class="text-box">
+						</p>
+						<button type="button" class="button" id="bob-omb-button">Get Quote</button>
+			</div>
+			<div class="col-xs-12 col-sm-4 baddies" id="cheepcheep"><img src="http://img4.wikia.nocookie.net/__cb3/cheepcheep/images/5/50/Wiki-background">
+				<p class="text-center img-text">CheepCheep
+					<p>
+						<p class="pricing">Pricing: &nbsp;11 Coins</p>
+						<p class="total-caught">Total Caught: &nbsp;
+							<input type="number" id="cheepcheep-tc" class="text-box">
+						</p>
+						<button type="button" class="button" id="cheep-cheep-button">Get Quote</button>
+			</div>
+		</div>
+		
+	</article>
+
+	<div class="container" id="price-info">
+		<div class="col-xs-6 text-left">Total Price: </div>
+		<div class="col-xs-6 text-right" id="total-price"></div>
+	</div>
+	<button class="btn text-center" id="nightMode">Night Mode</button>
+	<footer class="footer">
+		<div class="container">
+			<p>Mario@mariopestcontrol.com</p>
+			<p><a class="link" href=" ">www.Mariopestcontrol.com</a></p>
+			<p>181 Goomba Ln, Mushroom Kingdom, 82002</p>
+		</div>
+	</footer>
+	<audio Id="coinSound">
+	<source src="Mario-coin-sound.mp3">
+	</audio>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>

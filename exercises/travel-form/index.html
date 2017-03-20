@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Travel Site</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container head">
+		<div class="row">
+			<div>
+				<h1 class="main-content">Welcome to the Airways</h1></div>
+		</div>
+	</div>
+	<div class="container background">
+		<div class="background-color" id="back">
+			<div class="content" id="content">
+				<div class="container">
+					<div class="row">
+						<form id="form">
+							<div class="questionaire">
+								<div class="row">
+									<div class="row name"><b>Name</b></div>
+									<div class="row">
+										<div class="col-6">First Name:
+											<input type="name" name="firstName">
+										</div>
+										<div class="col-6">Last Name:
+											<input type="name" name="lastName">
+										</div>
+									</div>
+								</div>
+								<div class="row age"><b>Age</b></div>
+								<div class="col-12">
+									<input type="number" name="age">
+								</div>
+								<div class="row gender"><b>Gender</b></div>
+								<div class="col-4">
+									<input type="radio" name="gender" value="Male"> Male
+									<input type="radio" name="gender" value="Female"> Female
+									<input type="radio" name="gender" value="Other"> Other
+								</div>
+								<div class="row location"><b>Where to?</b></div>
+								<div class="col-12">
+									<select name="location">
+										<option value="California">California</option>
+										<option value="Nevada">Nevada</option>
+										<option value="Utah">Utah</option>
+										<option value="France">France</option>
+									</select>
+								</div>
+								<div class="row diet"><b>Dietary Restrictions?</b></div>
+								<div class="checks col-4">
+									<input type="checkbox" name="foods" value="Vegetarian">Vegetarian
+									<input type="checkbox" name="foods" value="Kosher">Kosher
+									<input type="checkbox" name="foods" value="Lactose Free">Lactose Free
+								</div>
+								<div class="row">
+									<div class="col-12">
+										Select a new background color:
+										<input type="color" name="favcolor" value="#" class="color">
+									</div>
+								</div>
+								<div class="row">
+									<div class="button">
+										<button type="button" Id="button">Submit!</button>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="footer">
+			</div>
+		</div>
+	</div>
+</body>
+<script src="app.js"></script>
+
+</html>

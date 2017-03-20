@@ -1,0 +1,12 @@
+.col-3{
+	display:inline-block;
+	width: 23%;
+	border: 1px solid black;
+	padding:5px;
+}
+.col-6{
+	display:inline-block;
+	width: 48%;
+	border: 1px solid black;
+	padding:5px;
+}

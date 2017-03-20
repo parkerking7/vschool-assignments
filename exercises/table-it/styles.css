@@ -1,0 +1,22 @@
+table{
+	width: 100%;
+	align-content: center;
+	border-collapse: collapse;
+	font-family:Verdana;
+}
+td, th {
+	border: 3px groove;
+	border-color:burlywood;
+	padding; 10px;
+	text-align: center;
+}
+td{
+	background-color: beige;
+}
+th{
+	background-color: bisque;
+}
+h1{
+	text-align: center;
+	font-family: Verdana;
+}

@@ -1,0 +1,15 @@
+.full-list{
+	margin:auto;
+	width:33%;
+	margin-top:50px;
+	text-align: center;
+	line-height: 4em;
+	border: 3px solid black; 
+}
+.groceries{
+	text-align: left;
+	line-height:2em;
+}
+h3{
+	text-decoration: underline;
+}

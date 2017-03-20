@@ -1,0 +1,77 @@
+{
+	"appetizers": [{
+		"name": "onion rings",
+		"ingredients": ["Onions", "Rings"],
+		"description": "These are rings that are also onions"
+	}, {
+		"name": "French Fries",
+		"ingredients": ["French", "Fries"],
+		"description": "These are Fries that are imported from the french"
+
+	}, {
+		"name": "Wings",
+		"ingredients": ["Chicken", "Wing Sauce"],
+		"description": "These are chicken wings dipped in our wing sauce"
+
+	}],
+	"cold sandwiches": [{
+		"name": "Ice sandwich",
+		"ingredients": ["Water", "Ham"],
+		"description": "This is a ham sandwich served on fresh ice"
+	}, {
+		"name": "PB and J",
+		"ingredients": ["Peanut Butter", "Jelly", "Bread"],
+		"description": "This is just like the sandwich your lazy ass could make at home"
+
+	}, {
+		"name": "BLT",
+		"ingredients": ["Bacon", "Lettuce", "Tostada"],
+		"description": "Just your basic BLT nothing more"
+
+	}],
+	"hot sandwiches": [{
+		"name": "Grilled Cheese",
+		"ingredients": ["Bread", "Cheese"],
+		"description": "We literally grilled it for like 3 minutes"
+	}, {
+		"name": "Mac and cheese Sandwich",
+		"ingredients": ["Mac", "cheese", "bread"],
+		"description": "We put mac and cheese on bread and you're gonna buy it"
+
+	}, {
+		"name": "Bread Sandwich",
+		"ingredients": ["Bread", "Bread"],
+		"description": "We put bread on bread on bread on"
+
+	}],
+	"desserts": [{
+		"name": "Cake",
+		"ingredients": ["If", "You're", "Checking", "You", "Don't", "Want", "to", "know"],
+		"description": "This will probably kill you"
+	}, {
+		"name": "French Toast",
+		"ingredients": ["French", "Toast"],
+		"description": "Because Why not"
+
+	}, {
+		"name": "Ice Cream",
+		"ingredients": ["Ice ", "Cream"],
+		"description": "Just some ice mixed with a little cream"
+
+	}],
+	"drinks": [{
+		"name": "Water",
+		"ingredients": ["Just", "Water"],
+		"description": "Why are you asking what this is"
+	}, {
+		"name": "Lemonade",
+		"ingredients": ["Lemons", "Water"],
+		"description": "Just lemons and water, no sugar added"
+
+	}, {
+		"name": "Sugar Water",
+		"ingredients": ["Sugar", "Water"],
+		"description": "Just sugar and water, pairs well with the lemonade"
+
+	}]
+}

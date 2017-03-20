@@ -1,0 +1,59 @@
+h1,
+p {
+	text-align: center;
+}
+
+. #form {
+	text-align: center;
+	line-height: 2em;
+}
+body {
+	background-image: url(background-image.jpg);
+	color:white;
+}
+#scoreTable {
+	margin-top: 3em;
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	line-height: 2em;
+}
+
+td,
+th {
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+
+#formTable {
+	border: 1px solid white;
+	border-collapse: collapse;
+	width: 33%;
+	text-align: center;
+	line-height: 3em;
+	margin: auto;
+}
+
+#submit {
+	height: 100px;
+	width: 100px;
+}
+
+.right-label {
+	width: 80%
+}
+#trashTable{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 33%;
+	text-align: center;
+	line-height: 3em;
+	margin: auto;
+}
+
+*{
+	font-family: futura;
+}
+
+

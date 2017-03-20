@@ -1,0 +1,49 @@
+*{
+	font-family: ubuntu;
+}
+#list{
+	margin: auto;
+	text-align: center;
+}
+h2{
+	font-size: 50px;
+	background-color:#1E4175;
+	color:white;
+	text-decoration: underline;
+}
+.text-box{
+	height:4em;
+}
+.form{
+	margin-top: 30px;
+}
+.btn{
+	font-size:25px;
+}
+.list{
+	margin:20px;
+	font-size: 15px;
+}
+.uList {
+	font-size: 25px;
+	list-style-type:none;
+	line-height: 2em;
+	margin-top: 2em;
+}
+li{
+	border: 2px solid black;
+	background-color:rgba(82,110,118,.6);
+}
+
+body{
+	background-image: url("background-image.jpg");
+}
+h1{
+	background-color:#1E4175;
+	color:beige;
+}
+img{
+	float: right;
+	width: 4em;
+	height: 4em;
+}
