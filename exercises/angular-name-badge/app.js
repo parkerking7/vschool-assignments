@@ -1,18 +1,20 @@
 var app = angular.module("myApp", []);
 
-app.controller("mainCtrl", ["$scope", function ($scope) {
-
-	$scope.logFunc = function () {
-		console.log($scope.firstName, $scope.lastName, $scope.email, $scope.birthPlace, $scope.phone, $scope.food, $scope.about)
-		$scope.empName = function () {
-			return "Name : " + $scope.firstName + " " + $scope.lastName;
+app.controller("mainCtrl", ["$scope", function($scope) {
+	
+	
+	$scope.persons = []
+	
+	$scope.newEmp = function(){
+		var person = {
+			
 		}
-		$scope.empEmail = "Email: " + $scope.email;
-		$scope.empBirthPlace = "Place of birth: " + $scope.birthPlace;
-		$scope.empPhone = "Phone: " + $scope.phone;
-		$scope.empFood = "Favorite food: " + $scope.food;
-		$scope.empAbout = $scope.about;
-		$scope.class="employeeForm"
+		person.empName = $scope.firstName + " " + $scope.lastName;
+		person.empPhone = $scope.phone.substring(0,3) + "-" + $scope.phone.substring(3,6) + "-" + $scope.phone.substring(6,10) ;
+		person.empBirth = $scope.birthPlace;
+		person.empEmail = $scope.email;
+		person.empFood = $scope.food;
+		person.empAbout = $scope.about;
+		$scope.persons.push(person);
 	}
-
-}])
+}]);

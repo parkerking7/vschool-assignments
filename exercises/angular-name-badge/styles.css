@@ -1,6 +1,6 @@
 .employeeForm{
 	border-radius: 20px;
-	border: 1px solid black; 
+	border: 2px solid black; 
 }
 .form-element{
 	margin-top:10px;
@@ -15,4 +15,30 @@
 
 .outer-spacing{
 	margin-top: 25px;
+}
+
+.about-info{
+	border: 1px solid black;
+	height:10em;
+}
+.empBadge{
+	padding-top:25px;
+}
+.email{
+	float:left;
+}
+.ng-invalid.ng-touched{
+	border-color:red;
+}
+.even{
+	border-radius: 20px;;
+	background-color:rgb(255,50,25);
+	font-size: 25px;
+	color:#fff;
+}
+.odd{
+	border-radius: 20px;;
+	background-color:rgb(21,203,255);
+	font-size: 25px;
+	color:#fff;
 }
