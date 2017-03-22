@@ -1,0 +1,18 @@
+.employeeForm{
+	border-radius: 20px;
+	border: 1px solid black; 
+}
+.form-element{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.form-alignment{
+	padding-top:45px;
+}
+.submit-btn{
+	margin-top: 10px;;
+}
+
+.outer-spacing{
+	margin-top: 25px;
+}

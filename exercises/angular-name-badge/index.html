@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Angular ng-model</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body ng-controller="mainCtrl">
+	<div class="container">
+
+		<div class="form-alignment" class="row">
+			<form name="form" class="employeeForm">
+				<div class="outer-spacing">
+
+				</div>
+				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="firstName" id="firstName" placeholder="First Name">
+				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="lastName" name="lastName" placeholder="Last Name">
+				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="email" name="email" placeholder="Email">
+				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="birthPlace" name="birthPlace" placeholder="Place of Birth">
+				<input class="form-element col-xs-offset-1 col-xs-4" type="number" ng-model="phone" name="phone" placeholder="Phone">
+				<input class="form-element col-xs-offset-1 col-xs-4" ype="text" ng-model="food" name="food" placeholder="Favorite Food">
+				<textarea rows="5" name="aboutSelf" class="form-element col-xs-offset-1 col-xs-9" placeholder="Tell us about yourself" ng-model="about"></textarea>
+				<button type="button" class="btn btn-sucess submit-btn col-xs-offset-5" ng-click="logFunc()">Submit</button>
+				<div class="outer-spacing">
+
+				</div>
+
+			</form>
+		</div>
+
+	</div>
+
+	<div class="containter">
+
+		<div class="form-alignment row" >
+			<div ng-class="class">
+				<div class="outer-spacing">
+				</div>
+				<p class="form-element col-xs-offset-1 col-xs-4">{{empName()}}</p>
+				<p class="form-element col-xs-offset-1 col-xs-4">{{empPhone}}</p>
+				<p class="form-element col-xs-offset-1 col-xs-4">{{empBirthPlace}}</p>
+				<p class="form-element col-xs-offset-1 col-xs-4">{{empFood}}</p>
+				<p class="form-element col-xs-offset-1 col-xs-4">{{empEmail}}</p>
+				<p rows="5" name="aboutSelf" class="form-element col-xs-offset-1 col-xs-9">{{empAbout}}</p>
+				<div class="outer-spacing">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>
