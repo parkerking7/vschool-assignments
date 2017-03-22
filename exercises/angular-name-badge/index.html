@@ -22,7 +22,7 @@
 				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="lastName" name="lastName" placeholder="Last Name" ng-minlength="3" required>
 				<input class="form-element col-xs-offset-1 col-xs-4" type="email" ng-model="email" name="email" placeholder="Email" required>
 				<input class="form-element col-xs-offset-1 col-xs-4" type="text" ng-model="birthPlace" name="birthPlace" placeholder="Place of Birth" required>
-				<input type="tel" 
+				<input type="num" 
                    class="form-element col-xs-offset-1 col-xs-4" 
                    ng-minlength="10" 
                    ng-maxlength="10"  
@@ -40,7 +40,7 @@
 			</form>
 		</div>
 	</div>
-	<div ng-repeat="name in persons">
+	<div ng-repeat="name in persons track by $index">
 		<div class="container empBadge">
 			<div class="row employeeForm">
 				<div class="col-xs-12" ng-class-even ="'even'" ng-class-odd = "'odd'">Badge: </div>
@@ -52,6 +52,7 @@
 				<h6 class="form-element col-xs-offset-1 col-xs-4">Favorite Food: {{name.empFood}} </h6>
 				<h6 class="form-element col-xs-offset-1 col-xs-4">Email: {{name.empEmail}} </h6>
 				<p class="form-element about-info col-xs-offset-1 col-xs-9"> {{name.empAbout}}</p>
+				<button class="btn" ng-click="delete($index)">Delete</button>
 				<div class="outer-spacing">
 				</div>
 
