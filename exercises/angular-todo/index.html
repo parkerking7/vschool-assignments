@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>To Do List </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<link href="styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="mainCtrl">
+	<div class="container list-head">
+		<div class="row">
+			<h1 class="head-text text-center">To Do list</h1>
+		</div>
+		<div class="row">
+			<form name="listForm">
+				<div class="col-xs-3">
+					<input type="text" ng-model="itemName" placeholder="Item Name...">
+				</div>
+				<div class="col-xs-3">
+					<input type="text" ng-model="itemPrice" placeholder="Price...">
+				</div>
+				<div class="col-xs-3">
+					<input type="text" ng-model="itemDescription" placeholder="Description...">
+				</div>
+				<div class="col-xs-3">
+					<input type="text" ng-model="itemUrl" placeholder="Image URL...">
+				</div>
+				<div class="col-xs-offset-4 col-xs-3"><button class="submit-btn btn" ng-click="submitList()" >Add to List</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div ng-repeat="item in listArr track by $index">
+				<div ng-class="{'crossOut': checked}" class="list-item col-xs-offset-1 col-xs-10">
+					<div class="item-header">
+						<h2 class="text-center">{{item.title}}</h2>
+					</div>
+					<div class="item-description">
+						<p class="text-center">{{item.description}}</p>
+					</div>
+					<div class="item-price">
+						<h4 class="text-center">$ {{item.price}}</h4>
+					</div>
+					<div><img class="item-img" ng-src="{{item.imgUrl}}"></div>
+					<div  class="col-xs-6">Completed?<input type="checkbox" ng-model="checked"></div>
+					<div class="col-xs-6"><button class=" btn btn-danger delete-btn" ng-click = "deleteItem($index)">Delete</button>
+						<div class="bottom-space"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
+</html>

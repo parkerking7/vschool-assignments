@@ -1,0 +1,38 @@
+.submit-btn {
+	margin-left: 55px;
+	margin-top: 25px;
+	background-color: #76665C
+}
+
+.list-head {
+	background-color: #234B87;
+	height: 15em;
+}
+
+.item-img {
+	width: 100%;
+}
+
+.list-item {
+	margin-top: 25px;
+	background-color: #0FAAAC;
+	color: white;
+}
+
+.bottom-space {
+	height: 15px;
+}
+
+.delete-btn {
+	float: right;
+}
+
+.input-box {
+	color: black;
+}
+
+.crossOut {
+	text-decoration: line-through;
+	transform: rotate(40deg);
+	color:red;
+}
