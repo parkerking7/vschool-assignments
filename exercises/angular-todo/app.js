@@ -15,7 +15,7 @@ app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
 		listItem.imgUrl = $scope.itemUrl;
 		$http.post("http://api.vschool.io/parker/todo/", listItem)
 			.then(function (response) {
-
+				console.log(response)
 			})
 	}
 	$http.get("http://api.vschool.io/parker/todo")
@@ -27,9 +27,11 @@ app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
 
 			}
 		})
-	$scope.deleteItem = function(i){
-		$http.delete("http://api.vschool.io/parker/todo/" + $scope.listArr[i]._id , function(response){
-		});
-		$scope.listArr.splice(i,1)
+	$scope.deleteItem = function (i) {
+		$http.delete("http://api.vschool.io/parker/todo/" + $scope.listArr[i]._id).then(function (response) {});
+		$scope.listArr.splice(i, 1);
+	}
+	$scope.edit = function(input){
+		$http.put("http://api.vschool.io/parker/todo/" + input._id, input)
 	}
 }])

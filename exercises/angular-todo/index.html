@@ -36,7 +36,7 @@
 	<div class="container">
 		<div class="row">
 			<div ng-repeat="item in listArr track by $index">
-				<div ng-class="{'crossOut': checked}" class="list-item col-xs-offset-1 col-xs-10">
+				<div ng-class="{'crossOut': item.completed}" class="list-item col-xs-offset-1 col-xs-10">
 					<div class="item-header">
 						<h2 class="text-center">{{item.title}}</h2>
 					</div>
@@ -47,7 +47,7 @@
 						<h4 class="text-center">$ {{item.price}}</h4>
 					</div>
 					<div><img class="item-img" ng-src="{{item.imgUrl}}"></div>
-					<div  class="col-xs-6">Completed?<input type="checkbox" ng-model="checked"></div>
+					<div  class="col-xs-6">Completed?<input type="checkbox" ng-model="item.completed" ng-click="edit(item)"></div>
 					<div class="col-xs-6"><button class=" btn btn-danger delete-btn" ng-click = "deleteItem($index)">Delete</button>
 						<div class="bottom-space"></div>
 					</div>
