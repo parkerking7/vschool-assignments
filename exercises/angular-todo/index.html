@@ -28,7 +28,7 @@
 				<div class="col-xs-3">
 					<input type="text" ng-model="itemUrl" placeholder="Image URL...">
 				</div>
-				<div class="col-xs-offset-4 col-xs-3"><button class="submit-btn btn" ng-click="submitList()" >Add to List</button>
+				<div class="col-xs-offset-4 col-xs-3"><button class="submit-btn btn" ng-click="submitList()">Add to List</button>
 				</div>
 			</form>
 		</div>
@@ -36,7 +36,8 @@
 	<div class="container">
 		<div class="row">
 			<div ng-repeat="item in listArr track by $index">
-				<div ng-class="{'crossOut': item.completed}" class="list-item col-xs-offset-1 col-xs-10">
+
+				<div ng-hide="editing" ng-class="{'crossOut': item.completed}" class="list-item col-xs-offset-1 col-xs-10">
 					<div class="item-header">
 						<h2 class="text-center">{{item.title}}</h2>
 					</div>
@@ -47,13 +48,37 @@
 						<h4 class="text-center">$ {{item.price}}</h4>
 					</div>
 					<div><img class="item-img" ng-src="{{item.imgUrl}}"></div>
-					<div  class="col-xs-6">Completed?<input type="checkbox" ng-model="item.completed" ng-click="edit(item)"></div>
-					<div class="col-xs-6"><button class=" btn btn-danger delete-btn" ng-click = "deleteItem($index)">Delete</button>
+					<div class="col-xs-6">Completed?<input type="checkbox" ng-model="item.completed" ng-click="edit(item)"></div>
+					<button class="btn edit" ng-click="editing = !editing">Edit</button>
+					<div class="col-xs-6"><button class=" btn btn-danger delete-btn" ng-click="deleteItem($index)">Delete</button>
 						<div class="bottom-space"></div>
+
 					</div>
 				</div>
+				<div ng-show="editing">
+
+
+
+					<div class="item-header">
+						<input placeholder="title.." ng-model="item.title" class="col-xs-offset-4 col-xs-4">
+					</div>
+					<div class="item-description">
+						<input placeholder="description.." ng-model="item.description" class="col-xs-offset-4 col-xs-4">
+					</div>
+					<div class="item-price">
+						<input placeholder="price.." ng-model="item.price" class="col-xs-offset-4 col-xs-4">
+					</div>
+					<div><img class="item-img" ng-src="{{item.imgUrl}}"></div>
+					<button class="col-xs-4 col-xs-offset-4 btn" ng-click="edit(item); editing = !editing">Done</button>
+					<div class="bottom-space"></div>
+				</div>
+
+
 			</div>
 		</div>
+	</div>
+	<div>
+
 	</div>
 	<script src="app.js"></script>
 </body>
