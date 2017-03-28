@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="stateApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Favorite State</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="row">
+	<navbar>
+		<ul>
+			<li class="bar-item col-xs-4"><a href="/#/home">Home</a></li>
+			<li class="bar-item col-xs-4"><a href="/#/about">About</a></li>
+			<li class="bar-item col-xs-4"><a href="/#/whyilove">Why I love</a></li>
+		</ul>
+	</navbar>
+</div>
+	</div>
+	
+	
+	<ng-view></ng-view>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="about/about.js"></script>
+	<script src="home/home.js"></script>
+	<script src="whyilove/whyilove.js"></script>
+</body>
+
+</html>
