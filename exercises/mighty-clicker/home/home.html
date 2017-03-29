@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="counter-red text-center" ng-class="red"><h1>{{redCounter}}</h1></div>
+			<button class="btn col-xs-6 btn-danger" ng-click="red()">Red</button>
+		</div>
+		<div class="col-xs-6">
+			<div class="counter-blue text-center" ng-class="blue"><h1>{{blueCounter}}</h1></div>
+			<button class="btn col-xs-6 btn-primary" ng-click="blue()">Blue</button></div>
+	</div>
+	<div class="row" ng-class="reset">
+		<div class="col-xs-12">
+			<button class="btn col-xs-12 btn-warning" ng-click="reset()">Reset</button>
+		</div>
+	</div>
+</div>
