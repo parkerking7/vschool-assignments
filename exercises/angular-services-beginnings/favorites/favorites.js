@@ -4,10 +4,7 @@ app.controller("favoritesController", ["$scope","pokeService" ,function ($scope,
 	
 $scope.pokemon = pokeService.pokemon;
 	
-	$scope.removePokemon = function (pokeName) {
-		pokeService.removePokemon(pokeName);
-		
-	}
+	
 	
 }])
 

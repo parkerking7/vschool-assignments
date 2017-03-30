@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cartoon Network Site</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="mainCtrl">
+
+	<div class="container head">
+		<div class="row">
+
+			<form class="inputs">
+				<div class="col-xs-4">
+					<input type="text" ng-model="img.title" placeholder="Title">
+				</div>
+				<div class="col-xs-4">
+					<input type="text" ng-model="img.imgUrl" placeholder="Img Url">
+				</div>
+				<div class="col-xs-4">
+					<input type="text" ng-model="img.description" placeholder="Description">
+				</div>
+				<div class="col-xs-offset-4">
+					<button class="btn col-xs-4 button" ng-click="newChar(img)">Submit</button>
+				</div>
+			</form>
+
+		</div>
+		<div class="bottom-pad"></div>
+	</div>
+	<div class="container">
+		<div class="row" ng-repeat="char in characters">
+			<div class="col-xs-offset-2 col-xs-7">
+				<h1 class="text-center">{{char.title}}</h1>
+				<p class="text-center">{{char.description}}</p>
+				<img class="title-img" ng-src="{{char.imgUrl}}">
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
