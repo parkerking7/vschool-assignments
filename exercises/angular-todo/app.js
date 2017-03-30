@@ -1,6 +1,6 @@
 var app = angular.module("myApp", []);
 
-app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
+app.controller("mainCtrl", ["$scope", "changeService", function ($scope, changeService) {
 
 	$scope.listArr = [];
 
@@ -13,25 +13,42 @@ app.controller("mainCtrl", ["$scope", "$http", function ($scope, $http) {
 		listItem.price = $scope.itemPrice;
 		listItem.description = $scope.itemDescription;
 		listItem.imgUrl = $scope.itemUrl;
-		$http.post("http://api.vschool.io/parker/todo/", listItem)
-			.then(function (response) {
-				console.log(response)
-			})
+		changeService.postInfo(listItem);
 	}
-	$http.get("http://api.vschool.io/parker/todo")
-		.then(function (response) {
-			var listItems = response.data;
-			for (var i = 0; i < listItems.length; i++) {
+	changeService.pullInfo().then(function (response) {
+		var listItems = response.data;
+		for (var i = 0; i < listItems.length; i++) {
+			$scope.listArr.push(listItems[i]);
+		}
+	})
 
-				$scope.listArr.push(listItems[i]);
-
-			}
-		})
 	$scope.deleteItem = function (i) {
-		$http.delete("http://api.vschool.io/parker/todo/" + $scope.listArr[i]._id).then(function (response) {});
+		$scope.listArr = changeService.deleteInfo(i,$scope.listArr)
 		$scope.listArr.splice(i, 1);
 	}
-	$scope.edit = function(input){
-		$http.put("http://api.vschool.io/parker/todo/" + input._id, input)
+	$scope.edit = function (input) {
+		changeService.editInfo(input)
 	}
 }])
+
+app.service("changeService", function ($http) {
+
+	this.pullInfo = function () {
+		return $http.get("http://api.vschool.io/parker/todo")
+	}
+	this.postInfo = function (listItem) {
+		$http.post("http://api.vschool.io/parker/todo/", listItem)
+			.then(function (response) {
+				console.log(response);
+			})
+	}
+	this.deleteInfo = function (i,listArr) {
+		$http.delete("http://api.vschool.io/parker/todo/"+  listArr[i]._id).then(function(response){
+		})
+		return listArr;
+	}
+	this.editInfo = function(input){
+		console.log(input);
+		$http.put("http://api.vschool.io/parker/todo/" + input._id, input)
+	}
+})
