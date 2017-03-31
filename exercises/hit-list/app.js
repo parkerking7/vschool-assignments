@@ -1,6 +1,10 @@
 var app = angular.module("myApp", []);
 
 app.controller("mainCtrl", ["$scope", "hitService", function ($scope, hitService) {
+	
+	$scope.getip = function(json){
+		console.log(json.ip)
+	}
 	$scope.enemies = [];
 
 	hitService.getHits().then(function (response) {
