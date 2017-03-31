@@ -13,7 +13,7 @@ app.controller("mainCtrl", ["$scope", "changeService", function ($scope, changeS
 		listItem.price = $scope.itemPrice;
 		listItem.description = $scope.itemDescription;
 		listItem.imgUrl = $scope.itemUrl;
-		changeService.postInfo(listItem);
+		changeService.postInfo();
 	}
 	changeService.pullInfo().then(function (response) {
 		var listItems = response.data;
@@ -23,7 +23,7 @@ app.controller("mainCtrl", ["$scope", "changeService", function ($scope, changeS
 	})
 
 	$scope.deleteItem = function (i) {
-		$scope.listArr = changeService.deleteInfo(i,$scope.listArr)
+		$scope.listArr = changeService.deleteInfo(i, $scope.listArr)
 		$scope.listArr.splice(i, 1);
 	}
 	$scope.edit = function (input) {
@@ -39,16 +39,14 @@ app.service("changeService", function ($http) {
 	this.postInfo = function (listItem) {
 		$http.post("http://api.vschool.io/parker/todo/", listItem)
 			.then(function (response) {
-				console.log(response);
+				return (response);
 			})
 	}
-	this.deleteInfo = function (i,listArr) {
-		$http.delete("http://api.vschool.io/parker/todo/"+  listArr[i]._id).then(function(response){
-		})
+	this.deleteInfo = function (i, listArr) {
+		$http.delete("http://api.vschool.io/parker/todo/" + listArr[i]._id).then(function (response) {})
 		return listArr;
 	}
-	this.editInfo = function(input){
-		console.log(input);
-		$http.put("http://api.vschool.io/parker/todo/" + input._id, input)
+	this.editInfo = function (input) {
+		return $http.put("http://api.vschool.io/parker/todo/" + input._id, input)
 	}
 })
