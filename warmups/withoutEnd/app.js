@@ -1,11 +1,7 @@
-function withoutEnd2(str) {
-	var newStr = str;
-	var sliceAmount = newStr.length - 1
-	newStr = newStr.slice(1, sliceAmount);
-	console.log(newStr);
-}
+function withoutEnd2(str) { return str.slice(1, -1); }
+	
 
-withoutEnd2("hel")
+console.log(withoutEnd2("Hello world"));
 
 
 
