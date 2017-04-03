@@ -1,0 +1,21 @@
+body { 
+  background: url(star-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text{
+	color:white;
+	left: 0;
+    line-height: 2em;
+    margin: auto;
+    margin-top: -100px;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+	text-align: center;
+}
+.text h1{
+	font-size:4vh; 
+}
