@@ -19,7 +19,7 @@ var items = [];
 ////
 ////
 ////
-////TcldIS IS THE BEGINNING OF THE GAME!!
+////THIS IS THE BEGINNING OF THE GAME!!
 ////
 ////
 ////

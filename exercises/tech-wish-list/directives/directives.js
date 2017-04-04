@@ -7,4 +7,3 @@ app.directive('wishList', function () {
     };
 });
 
-//

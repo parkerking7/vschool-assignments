@@ -11,7 +11,7 @@ app.controller("HomeController", ["$scope", "weatherService", function ($scope, 
 		var longitude = response.longitude;
 		weatherService.getWeather(latitude, longitude).then(function (response) {
 			var response = response.data
-			console.log(response);
+			console.log(response.daily.data);
 			var rain = response.currently.precipProbability;
 			rain = Math.floor(rain * 100);
 

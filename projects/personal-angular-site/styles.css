@@ -31,21 +31,25 @@ body {
 }
 
 .headCover {
-	color:white;
+	color: white;
 	text-align: center;
 	position: absolute;
 	top: 50px;
-	height:139px;
+	height: 139px;
 	left: 0;
 	width: 100%;
-	background-color:#222222;
+	background-color: #222222;
 	z-index: 1;
 }
-.headCover h4{
-padding-top:px;
-}
-.dropdown{
+
+
+.dropdown {
 	z-index: 2;
-	background-color:#222222
+	background-color: #222222
 }
 
+.weather-item {
+	background-color: white;
+	width: 100%;
+	height: 300px;
+}
