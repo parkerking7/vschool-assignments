@@ -1,3 +1,7 @@
+*{
+	font-family: Montserrat, sans-serif;
+}
+
 body {
 	background: url(star-background.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -48,8 +52,25 @@ body {
 	background-color: #222222
 }
 
+.forecast-head{
+	color: rgba(260,260,260,.8);
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 5px;
+	line-height: 60px;
+}
 .weather-item {
-	background-color: white;
+	border-radius:25px;
+	color:rgba(260,260,260,.6);
+	text-align: center;
+	padding:5px;
+	border: solid #54579F;
+	background-color: rgba(37,46,81, .4);
 	width: 100%;
 	height: 300px;
+	margin-top:10px;
+}
+.week-day{
+	text-decoration: underline;
+	line-height: 2
 }
