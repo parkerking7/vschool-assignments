@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portApp">
+
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+				<a class="navbar-brand portfolio" href="index.html"><p>Portfolio</p></a>
+
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="/#/home">Home</a></li>
+					<li><a href="/#/about">About</a></li>
+					<li><a href="/#/works">Works</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<ng-view></ng-view>
+
+
+
+
+	<div id="footer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-4">
+					<p><b>Web Developer &amp; Mediocre Photographer</b></p>
+				</div>
+
+				<div class="col-lg-4">
+					<p>Currently in Utah </p>
+				</div>
+				<div class="col-lg-4">
+					<p>
+						<a href="mailto:parker.king0807@gmail.com">Parker.King0807@gmail.com </a></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+	<script src="home/home.js"></script>
+	<script src="about/about.js"></script>
+	<script src="works/works.js"></script>
+</body>
+
+</html>

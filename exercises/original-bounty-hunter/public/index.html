@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bountyApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bounty Hunter </title>
+
+	<link href="styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="mainCtrl">
+	<div class="container list-head">
+		<div class="row">
+			<h1 class="head-text text-center">Add Bounty</h1>
+		</div>
+		<div class="row">
+			<form name="listForm">
+				<div class="col-xs-6">
+					<input class="text-box" type="text" ng-model="bounty.firstName" placeholder="First Name...">
+				</div>
+				<div class="col-xs-6">
+					<input class="text-box" type="text" ng-model="bounty.lastName" placeholder="Last Name...">
+				</div>
+				<div class="col-xs-4">
+					<input class="text-box" type="text" ng-model="bounty.living" placeholder="Living...?">
+				</div>
+				<div class="col-xs-4">
+					<input class="text-box" type="number" ng-model="bounty.bountyAmount" placeholder="Bounty Worth...">
+				</div>
+				<div class="col-xs-4">
+					<input class="text-box" type="text" ng-model="bounty.type" placeholder="Sith or Jedi...">
+				</div>
+				<div class="col-xs-offset-4 col-xs-4"><button class=" addBounty submit-btn btn" ng-click="submitList(bounty)">Add Bounty</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div  ng-show="!editing"ng-repeat="bounty in bounties track by $index" class="col-xs-4 text-center bounty-item">
+				<h1>{{bounty.firstName}} {{bounty.lastName}}</h1>
+				<h2>{{bounty.bountyAmount | currency: "$"}}</h2>
+				<h3>Living: {{bounty.living}}</h3>
+				<h3>Type: {{bounty.type}}</h3>
+				<button class="btn btn-danger" ng-click="bye($index)">Delete</button>
+				<button class="btn btn-warning" ng-click="editing = !editing">Edit</button>	
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+* {
+	font-family: Montserrat, sans-serif;
+}
+
+#header {
+	height: 500px;
+	background: url("pictures/IMG_3648.JPG");
+	background-attachment: scroll;
+	background-size: cover
+}
+
+.main-head {
+	color:white;
+	background: url(../img/back.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	background-size: 100%;
+	background-size: cover;
+}
+
+#footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+	background: #999;
+}
+
+@media screen and (min-width: 1200px) {
+	#footer p {
+		line-height: 100px;
+	}
+}
+
+.navbar {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color:darkseagreen;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: darkseagreen;
+}
+.portfolio p{
+	color: darkseagreen;
+}
+

@@ -1,0 +1,14 @@
+.text-box, .addBounty {
+	width:100%;
+	text-align: center;
+	margin:20px;
+	font-size:25px;
+}
+.text-box{
+	height:50px;
+	
+}
+.bounty-item{
+	height:275px;
+	border: solid 1px black;
+}
