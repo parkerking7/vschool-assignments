@@ -10,7 +10,7 @@
 }
 
 .main-head {
-	color:white;
+	color: white;
 	background: url(../img/back.jpg) no-repeat center top;
 	margin-top: -70px;
 	padding-top: 250px;
@@ -46,14 +46,72 @@
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-	color:darkseagreen;
+	color: darkseagreen;
 	background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a {
 	color: darkseagreen;
 }
-.portfolio p{
+
+.portfolio p {
 	color: darkseagreen;
 }
+
+
+.draw {
+	position: relative;
+	vertical-align: middle;
+	transition: color 0.25s;
+}
+
+.draw::before {
+	box-sizing: inherit;
+	content: '';
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+}
+
+.draw::after {
+	box-sizing: inherit;
+	content: '';
+	position: absolute;
+	width: 5em;
+	height: 5em;
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.draw:hover {
+	color: black;
+}
+
+.draw:hover::before {
+	width: 100%;
+	height: 100%;
+	border-top-color: black;
+	border-right-color: black;
+	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.draw:hover::after {
+	width: 100%;
+	height: 100%;
+	border-bottom-color: black;
+	border-left-color: black;
+	transition: border-color 0s ease-out 0.5s, 
+	width 0.25s ease-out 0.5s, 
+	height 0.25s ease-out 0.75s; 
+}
+
+
 

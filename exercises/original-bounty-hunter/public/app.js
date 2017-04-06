@@ -17,10 +17,17 @@ app.controller("mainCtrl", ["$scope","bountyService", function($scope, bountySer
 	}
 	$scope.bye = function(id){
 		newId = $scope.bounties[id]._id
+		console.log(id)
+		$scope.bounties.splice(id, 1);
 		bountyService.bye(newId).then(function(response){
-			$scope.bounties.splice(id, 1);
+			
 		})
 	}
-	
+	$scope.edit = function(id, edits){
+		console.log(edits);
+		bountyService.change(id, edits).then(function(response){
+			console.log(response)
+		})
+	}
 	
 }])

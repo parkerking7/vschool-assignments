@@ -38,13 +38,23 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div  ng-show="!editing"ng-repeat="bounty in bounties track by $index" class="col-xs-4 text-center bounty-item">
+			<div ng-repeat="bounty in bounties track by $index" class="col-xs-4 text-center bounty-item">
+				<div ng-hide="!editing" class="editing">
+					<input ng-model="bounty.firstName">
+					<input ng-model="bounty.lastName">
+					<input ng-model="bounty.bountyAmount">
+					<input ng-model="bounty.living">
+					<input ng-model="bounty.type">
+					<button class="btn btn-warning col-xs-12" ng-click="editing = !editing; edit(bounty._id, bounty)">Edit</button>
+				</div>
+				<div ng-show ="!editing">
 				<h1>{{bounty.firstName}} {{bounty.lastName}}</h1>
 				<h2>{{bounty.bountyAmount | currency: "$"}}</h2>
 				<h3>Living: {{bounty.living}}</h3>
 				<h3>Type: {{bounty.type}}</h3>
 				<button class="btn btn-danger" ng-click="bye($index)">Delete</button>
-				<button class="btn btn-warning" ng-click="editing = !editing">Edit</button>	
+				<button class="btn btn-warning" ng-click="editing = !editing">Edit</button>
+				</div>
 			</div>
 		</div>
 	</div>

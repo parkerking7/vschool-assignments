@@ -13,5 +13,8 @@ app.service("bountyService", function ($http) {
 	this.bye = function(id){
 		return $http.delete("http://localhost:3000/bounty/" + id);
 	}
+	this.change = function(id, edits){
+		return $http.put("http://localhost:3000/bounty/" + id, edits);
+	}
 	
 })

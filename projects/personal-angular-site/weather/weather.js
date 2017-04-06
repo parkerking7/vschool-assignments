@@ -25,11 +25,11 @@ app.controller("WeatherController", ["$scope", "weatherService", function ($scop
 
 			}
 			$scope.week = days;
-			console.log($scope.week);
+			
 
 		})
 	})
-	console.log($scope.weekday);
+	
 
 
 }])

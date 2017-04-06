@@ -8,7 +8,7 @@ var port = 3000;
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 var bounties = []
 
@@ -24,24 +24,27 @@ app.delete("/bounty/:_id", function (req, res) {
 
 		if (bountyId === bounties[i]._id) {
 
-			res.send(bounties.splice(i, 1));
+			return res.send(bounties.splice(i, 1));
 
 		}
 	}
 })
 
 app.put("/bounty/:_id", function (req, res) {
-	var bountyId = req.params._id;
 	var editedBounty = req.body;
-	for (var  i = 0; i < bounties.length; i++) {
-		
+	var bountyId = req.params._id;
+	for (var i = 0; i < bounties.length; i++) {
 		if (bountyId === bounties[i]._id) {
-			editedBounty._id = uuid();
-			bounties.splice(i,1, editedBounty);
-			res.send(editedBounty)
-
+			for (var key in editedBounty) {
+				if (bounties[i][key] !== editedBounty[key]) {
+					bounties[i][key] = editedBounty[key];
+				}
+				
+			}
 		}
 	}
+	return res.send(editedBounty);
+
 })
 
 app.post("/bounty", function (req, res) {

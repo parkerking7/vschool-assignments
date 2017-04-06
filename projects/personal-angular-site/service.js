@@ -5,9 +5,11 @@ app.service("weatherService", function ($http) {
 	this.getLocation = function () {
 		return $http.get("http://jsonip.com/?callback=", function (response) {
 				return response.data;
+
 			})
 			.then(function (response) {
 				this.ip = response.data.ip
+
 				return $http.get("http://freegeoip.net/json/" + ip);
 			})
 	}
@@ -15,7 +17,7 @@ app.service("weatherService", function ($http) {
 		return $http.jsonp("https://api.darksky.net/forecast/46f953621ee05f1bec7b5ebfd43f4f49/" + lat + "," + long + "?callback=JSON_CALLBACK")
 	}
 
-	this.shouldGo = function (rain, clouds){
+	this.shouldGo = function (rain, clouds) {
 		switch (true) {
 			case (rain > 70 && clouds > 70):
 				return "It looks like it is going to rain, and it is quite cloudy. You will want to go another day!";
