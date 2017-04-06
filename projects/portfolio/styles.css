@@ -9,6 +9,10 @@
 	background-size: cover
 }
 
+ul.nav a:hover {
+	color: #80B086 !important;
+}
+
 .main-head {
 	color: white;
 	background: url(../img/back.jpg) no-repeat center top;
@@ -58,7 +62,6 @@
 	color: darkseagreen;
 }
 
-
 .draw {
 	position: relative;
 	vertical-align: middle;
@@ -98,20 +101,58 @@
 .draw:hover::before {
 	width: 100%;
 	height: 100%;
-	border-top-color: black;
-	border-right-color: black;
+	border-top-color: #CEFAD3;
+	border-right-color: #CEFAD3;
 	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 
 .draw:hover::after {
 	width: 100%;
 	height: 100%;
-	border-bottom-color: black;
-	border-left-color: black;
-	transition: border-color 0s ease-out 0.5s, 
-	width 0.25s ease-out 0.5s, 
-	height 0.25s ease-out 0.75s; 
+	border-bottom-color: #CEFAD3;
+	border-left-color: #CEFAD3;
+	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
+#social {
+	position: fixed;
+	bottom: 0px;
+	height: 165px;
+	width: 100%;
+}
 
+.links {
+	text-align: center;
+}
 
+.socialImg {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50px;
+	height: 50px;
+}
+
+.gitImg {
+	background: transparent;
+	border-radius: 10px transition-property: background, border-radius;
+	transition: all 1s ease-in-out;
+	transition-timing-function: linear;
+}
+
+.gitImg:hover {
+	background: #999;
+	border-radius: 50%;
+}
+
+.linkedImg {
+	background: transparent;
+	border-radius: 50%;
+	transition: all 1s ease-in-out;
+}
+
+.linkedImg:hover {
+	background: #1686B0;
+	border-radius: 100%;
+	border-radius: 0;
+}
