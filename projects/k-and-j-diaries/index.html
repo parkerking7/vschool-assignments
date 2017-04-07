@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>K &amp; J Diaries</title>
-	
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -15,22 +15,47 @@
 			<div class="col-xs-3 logo">
 				<img class="logo " src="https://web.archive.org/web/20161003210028im_/http://kandjdiaries.com/wp-content/themes/k_and_j/img/logo-h.png">
 			</div>
-			<ul class="nav-bar col-xs-offset-1 col-xs-5 hidden-xs">
-				<li><a>CATEGORIES</a></li>
-				<li><a>ABOUT</a></li>
-				<li><a>SHOP</a></li>
-				<li><a>CONTACT</a></li>
-			</ul>
-			<div class="col-xs-offset-10 search-bar hidden-sm hidden-xs">
-				<i class="glyphicon glyphicon-search"></i>
-				<input class="input-box" type="text" placeholder=" Search">
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="nav-bar col-md-7 hidden-xs">
+
+					<li class="nav-item dropdown ">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CATEGORIES</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">FASHION</a>
+							<br>
+							<a class="dropdown-item" href="#">BEAUTY</a>
+							<br>
+							<a class="dropdown-item" href="#">LIFESTYLE</a>
+							<br>
+							<a class="dropdown-item" href="#">MATERNITY CHIC</a>
+							<br>
+							<a class="dropdown-item" href="#">RECIPES</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown ">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">BIO</a>
+							<br>
+							<a class="dropdown-item" href="#">PRESS</a>
+							<br>
+							<a class="dropdown-item" href="#">FAQ</a>
+						</div>
+					</li>
+					<li><a>SHOP</a></li>
+					<li><a>CONTACT</a></li>
+				</ul>
+				<div class="col-xs-offset-10 search-bar hidden-sm hidden-xs">
+					<i class="glyphicon glyphicon-search"></i>
+					<input class="input-box" type="text" placeholder=" Search">
+				</div>
 			</div>
 		</div>
 	</nav>
 
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner email-field" role="listbox" >
+		<div class="carousel-inner " role="listbox">
 
 			<div class="item active">
 				<img src="https://web.archive.org/web/20161003210028im_/http://kandjdiaries.com/wp-content/uploads/2016/06/slider-pic3.jpg" alt="1" wclass="carousel-img">
@@ -49,12 +74,11 @@
 			<div class="item">
 				<img src="https://web.archive.org/web/20161003210028im_/http://kandjdiaries.com/wp-content/uploads/2016/05/skin1.jpg" alt="4" class="carousel-img">
 			</div>
-			
-				<input type="text" placeholder="EMAIL ADDRESS" class="email col-xs-offset-4 col-xs-3">
-			<span class=" email-sign glyphicon glyphicon-envelope"></span>
-		
 		</div>
-
+		<div class="email-field">
+			<input type="text" placeholder="EMAIL ADDRESS" class="email col-xs-offset-4 col-xs-3">
+			<span class=" email-sign glyphicon glyphicon-envelope"></span>
+		</div>
 	</div>
 
 	<article>

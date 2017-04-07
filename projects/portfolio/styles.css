@@ -21,20 +21,12 @@ ul.nav a:hover {
 	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 570px;
 	width: 100%;
 	background-size: 100%;
 	background-size: cover;
 }
 
-#footer {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	height: 100px;
-	width: 100%;
-	background: #999;
-}
 
 @media screen and (min-width: 1200px) {
 	#footer p {
@@ -114,11 +106,39 @@ ul.nav a:hover {
 	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
+
+
+/*
+.gallery {
+	margin-bottom: 250px;
+}
+*/
+
+
+.grow {
+	border: solid 1px white;
+	width:100%;
+	transition: all .5s ease-in-out;
+	z-index: 1;
+	position: absolute;
+	margin-bottom:200px;
+
+}
+
+.grow:hover {
+	border: 0px;
+	transform: scale(2);
+	z-index: 8;
+	position: absolute;
+	margin-bottom: 100px;
+}
+
 #social {
-	position: fixed;
-	bottom: 0px;
+	position: absolute;
+	bottom: -250px;
 	height: 165px;
 	width: 100%;
+	z-index: 9;
 }
 
 .links {
@@ -131,6 +151,7 @@ ul.nav a:hover {
 	margin-right: auto;
 	width: 50px;
 	height: 50px;
+	z-index: 9;
 }
 
 .gitImg {
@@ -138,21 +159,35 @@ ul.nav a:hover {
 	border-radius: 10px transition-property: background, border-radius;
 	transition: all 1s ease-in-out;
 	transition-timing-function: linear;
+	z-index: 9;
 }
 
 .gitImg:hover {
 	background: #999;
 	border-radius: 50%;
+	z-index: 9;
 }
 
 .linkedImg {
 	background: transparent;
 	border-radius: 50%;
 	transition: all 1s ease-in-out;
+	z-index: 9;
 }
 
 .linkedImg:hover {
 	background: #1686B0;
 	border-radius: 100%;
 	border-radius: 0;
+	z-index: 9;
 }
+#footer {
+	position: absolute;
+	left: 0px;
+	bottom: -250px;
+	height: 100px;
+	width: 100%;
+	background: #999;
+	z-index: 9;
+}
+

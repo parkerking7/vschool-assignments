@@ -7,9 +7,16 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	
 }
-
+/*
+.navbar{
+	display:block;
+}
+.collapse{
+	display:block;
+}
+*/
 .nav-bar li {
 	float: left;
 	margin: 30px;
@@ -35,8 +42,15 @@
 	color: #999;
 }
 
+.dropdown-menu{
+	overflow: visible;
+	text-align: center;
+	z-index: 9000 !important;
+	background-color:red;	
+}
+
 .email-field {
-	height: 47em;
+	height: 5em;
 	width: 100%;
 	background: radial-gradient(ellipse at center, rgba(252, 202, 178, 0.56) 0%, rgba(255, 177, 140, 0.2) 100%) !important
 }
@@ -46,6 +60,11 @@
 .email-sign{
 	margin-top:1.3em;
 	right:2em
+}
+.carousel{
+	overflow:visible;
+	z-index: -1000;
+	
 }
 .carousel-img {
 	display: flex;
