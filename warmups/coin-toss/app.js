@@ -22,11 +22,13 @@ function coverValue(arr, coinType) {
 	} else if (coinType === "quarter") {
 		coinType = 25;
 	}
-	finalVal = Math.floor(finalVal / coinType) + 1;
+	finalVal = Math.ceil(finalVal / coinType);
 	console.log(finalVal)
 }
 
 
 coverValue(["penny", "nickel", "dime"], "quarter") // -> 1`
-coverValue(["penny", "nickel", "dime"], "nickel") // -> 4`
+coverValue(["penny", "nickel", "dime", "nickel"], "nickel") // -> 4`
 coverValue(["penny", "nickel", "dime", "dime", "quarter"], "dime") // -> 6`
+
+
