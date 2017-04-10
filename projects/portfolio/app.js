@@ -2,7 +2,7 @@ var app = angular.module("portApp", ["ngRoute"]);
 
 app.config(["$routeProvider", function ($routeProvider) {
 
-	$routeProvid  er
+	$routeProvider
 		.when("/home", {
 			templateUrl: "home/home.html",
 			controller: "HomeController"
