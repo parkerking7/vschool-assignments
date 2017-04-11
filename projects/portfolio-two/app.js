@@ -3,6 +3,10 @@ var app = angular.module("portApp", ["ngRoute"]);
 app.config(["$routeProvider", function ($routeProvider) {
 
 	$routeProvider
+	.when("/enter", {
+			templateUrl: "enter/enter.html",
+			controller: "EnterController"
+		})
 		.when("/home", {
 			templateUrl: "home/home.html",
 			controller: "HomeController"
@@ -16,8 +20,8 @@ app.config(["$routeProvider", function ($routeProvider) {
 			controller: "WorksController"
 		})
 		.otherwise({
-			redirectTo: "/home"
+			redirectTo: "/enter"
 		});
-}])
+}]);
 
 

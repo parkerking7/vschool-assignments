@@ -162,7 +162,12 @@ ul.nav a:hover {
 	}
 }
 
-
+/*This is the code for the works page*/
+.navbar-cover{
+	background-color:#999999;
+	height:50px;
+	backface-visibility: visible;
+}
 /*This is the code for the footer!*/
 
 @media screen and (min-width: 1200px) {

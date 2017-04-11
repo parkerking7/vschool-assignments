@@ -39,7 +39,7 @@ app.put("/bounty/:_id", function (req, res) {
 				if (bounties[i][key] !== editedBounty[key]) {
 					bounties[i][key] = editedBounty[key];
 				}
-				
+
 			}
 		}
 	}
