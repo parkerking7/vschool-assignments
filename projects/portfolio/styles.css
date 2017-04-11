@@ -1,38 +1,16 @@
 * {
 	font-family: Montserrat, sans-serif;
+	margin: 0;
 }
 
-#header {
-	height: 500px;
-	background: url("pictures/IMG_3648.JPG");
-	background-attachment: scroll;
-	background-size: cover
-}
-
-ul.nav a:hover {
-	color: #80B086 !important;
-}
-
-.main-head {
-	color: white;
-	background: url(../img/back.jpg) no-repeat center top;
-	margin-top: -70px;
-	padding-top: 250px;
-	text-align: center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 570px;
-	width: 100%;
-	background-size: 100%;
-	background-size: cover;
+.content {
+	min-height: 500px;
+	margin-bottom: 0;
+	clear: both;
 }
 
 
-@media screen and (min-width: 1200px) {
-	#footer p {
-		line-height: 100px;
-	}
-}
+/*This is the code for the navbar*/
 
 .navbar {
 	background-color: transparent;
@@ -107,22 +85,44 @@ ul.nav a:hover {
 }
 
 
+/*This is the end of the code for the nav-bar*/
 
-/*
-.gallery {
-	margin-bottom: 250px;
+
+/*This is the home page*/
+
+#homeHeader {
+	height: 500px;
+	background: url("pictures/IMG_3648.JPG");
+	background-attachment: scroll;
+	background-size: cover
 }
-*/
 
+ul.nav a:hover {
+	color: #80B086 !important;
+}
+
+.main-head {
+	color: white;
+	background: url(../img/back.jpg) no-repeat center top;
+	margin-top: -50px;
+	padding-top: 250px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	width: 100%;
+	background-size: 100%;
+	background-size: cover;
+}
 
 .grow {
 	border: solid 1px white;
-	width:100%;
+	width: 100%;
+	top: 75px;
 	transition: all .5s ease-in-out;
 	z-index: 1;
 	position: absolute;
-	margin-bottom:200px;
-
+	/*	margin-bottom:200px;*/
+	overflow: hidden;
 }
 
 .grow:hover {
@@ -130,13 +130,75 @@ ul.nav a:hover {
 	transform: scale(2);
 	z-index: 8;
 	position: absolute;
-	margin-bottom: 100px;
+}
+
+
+/*This is the code for the about page*/
+
+#aboutHeader {
+	height: 500px;
+	background: url("pictures/IMG_3692.JPG");
+	filter: grayscale(100%);
+	background-attachment: scroll;
+	background-size: cover
+}
+
+.aboutText h1 {
+	font-weight: 900;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.aboutText p {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+	.aboutText h1 {
+		margin-bottom: 0
+	}
+	.aboutText p {
+		font-size: 11px;
+	}
+}
+
+
+/*This is the code for the footer!*/
+
+@media screen and (min-width: 1200px) {
+	#footer p {
+		line-height: 100px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.footer {
+		position: absolute;
+		left: 0px;
+		bottom: -648px;
+		height: 100px;
+		width: 100%;
+		background: #999;
+		z-index: 9;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	.footer {
+		position: absolute;
+		left: 0px;
+		bottom: -350px;
+		height: 100px;
+		width: 100%;
+		background: #999;
+		z-index: 9;
+	}
 }
 
 #social {
 	position: absolute;
-	bottom: -250px;
-	height: 165px;
+	bottom: 0;
+	height: 158px;
 	width: 100%;
 	z-index: 9;
 }
@@ -181,13 +243,3 @@ ul.nav a:hover {
 	border-radius: 0;
 	z-index: 9;
 }
-#footer {
-	position: absolute;
-	left: 0px;
-	bottom: -250px;
-	height: 100px;
-	width: 100%;
-	background: #999;
-	z-index: 9;
-}
-
