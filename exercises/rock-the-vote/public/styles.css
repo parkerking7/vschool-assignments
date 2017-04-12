@@ -1,0 +1,95 @@
+.body{
+    background-color:#909090
+}
+*{
+    color:black;
+    font-weight:300 !important;
+}
+.list-head{
+    background-image: url("background top.jpg");
+    background-size:cover;
+    margin-top: 15px;
+    padding:20px;
+    padding-bottom:100px;
+    border-radius: 25px;
+}
+.list-head h1{
+    color:white;
+}
+.text-box{
+    width:100%;
+    line-height:35px;
+    text-align: center;
+    margin-bottom:10px;
+    text-transform: capitalize;
+    opacity:.8;
+}
+.desc{
+    width:100%;
+    margin-bottom:20px;
+    opacity:.4;
+}
+.addVote{
+    width:100%;
+    opacity:.9;
+}
+.posts{
+    margin-top:10px;
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.delete{
+    display: inline;
+    float:right;
+    cursor: pointer;
+}
+.voteAmount{
+    display:block;
+
+}
+.votes{
+    display:inline;
+    float:right;
+}
+
+
+/*Evertyhing to deal with how a comment looks*/
+.commentTab{
+    cursor: pointer;
+    float:left;
+}
+.comments{
+    width: 100%;
+    margin-top:10px;
+    border: 1px solid black;
+
+}
+
+.addComment{
+float:right;
+    bottom:0;
+    display:inline;
+    border-radius: 25px;
+}
+.comment-box{
+    width:100%;
+    line-height:25px;
+    text-align: center;
+    margin-bottom:10px;
+}
+.commentsShowing{
+    margin-top:50px;
+}
+.darkGreen{
+  background-color:#C7DFA4;
+}
+.darkRed{
+    background-color:#A0C7B4;
+}
+.lightGreen{
+    background-color:#B9C5C8;
+}
+.lightRed{
+    background-color:#C999A0;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" ng-app="rockApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-controller="mainCtrl" class="body">
+<div class="container list-head">
+    <div class="row">
+        <h1 class="head-text text-center">ROCK THAT VOTE!</h1>
+    </div>
+
+    <div class="row">
+        <form name="listForm">
+            <div class="col-xs-offset-4 col-xs-4">
+                <input class="text-box" type="text" ng-model="vote.title" placeholder="Article Title..">
+            </div>
+            <div class="col-xs-offset-2 col-xs-8"">
+                <textarea  class="desc" rows ="6" cols ="12" ng-model="vote.description" placeholder="Article Description...">
+
+                </textarea>
+            </div>
+            <div class="col-xs-offset-4 col-xs-4"><button class=" addVote submit-btn btn" ng-click="postCreated(vote)">POST THAT VOTE!</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 text-center posts" ng-class-even="'darkGreen'" ng-class-odd="'darkRed'" ng-repeat="post in postArr[0] | orderBy: '-votes' track by $index  "}>
+            <p class="delete"><a ng-click="delete(post,$index)">x</a></p>
+            <h1 class="postHead ]">{{post.title}}</h1>
+            <p class="postDesc">{{post.description}}</p>
+            <p class="voteAmount">{{post.votes}} Votes</p>
+            <p class="commentAmount">{{post.comments.length}} Comments</p>
+            <div class="votes">
+            <button class="btn btn-default btn-sm upvote" ng-click="voteUp(post)"><span class=" glyphicon glyphicon-thumbs-up"></span></button>
+            <button class="btn btn-default btn-sm downvote"ng-click="voteDown(post)"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+        </div>
+            <p><a ng-click="show = !show" class="commentTab">Show comments </a></p>
+            <div  ng-show="show" class="commentsShowing">
+                <p  ng-class-even="'lightGreen'" ng-class-odd="'lightRed'" ng-repeat="mention in post.comments track by $index" class="comments col-xs-6"  class="text-center">{{mention}}<span class="delete"><a ng-click="deleteComment(post,$index)">x</a></span></p>
+
+                <div class="commentOn" ng-show="showComment">
+                    <input class="comment-box" type="text" ng-model="post.comment" placeholder="New Comment...">
+                    <button class="btn btn-default btn-sm" ng-click="comment(post, post.comment); showComment = !showComment">Post</button>
+                </div>
+                <button class="addComment btn btn-default btn-sm" ng-click="showComment = !showComment">Add Comment</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="./services/service.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</html>
