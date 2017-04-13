@@ -1,5 +1,6 @@
 body {
 	background-image: url("http://www.amsmeteors.org/wp-content/uploads/2013/08/IMG_1305-perseid-tree-composite.jpg");
+
 }
 *{
 	box-sizing: border-box;
@@ -15,7 +16,7 @@ body {
 	width: 225px;
 	height: 75px;
 	top: 40%;
-	left: 51%;
+	left: 50%;
 	margin-left: -50px;
 	margin-top: -25px;
 	font-weight: 300;
