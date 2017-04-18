@@ -1,10 +1,14 @@
 var app = angular.module("portApp");
 
-app.controller("EnterController", ["$scope", "$location", function ($scope, $location) {
+app.controller("EnterController", ["$scope", function ($scope) {
 
-	$scope.changePage = function () {
-		$location.path("/home")
-	}
+	// $scope.changePage = function () {
+	// 	$location.path("/home")
+	// }
+
+    $scope.test = "This is working!" ;
+
+
     var canvas = document.getElementById('nokey'),
         can_w = parseInt(canvas.getAttribute('width')),
         can_h = parseInt(canvas.getAttribute('height')),
@@ -85,7 +89,7 @@ app.controller("EnterController", ["$scope", "$location", function ($scope, $loc
                     r: R,
                     alpha: 1,
                     phase: randomNumFrom(0, 10)
-                }
+                };
                 break;
             case 'right':
                 return {
@@ -96,7 +100,7 @@ app.controller("EnterController", ["$scope", "$location", function ($scope, $loc
                     r: R,
                     alpha: 1,
                     phase: randomNumFrom(0, 10)
-                }
+                };
                 break;
             case 'bottom':
                 return {
@@ -107,7 +111,7 @@ app.controller("EnterController", ["$scope", "$location", function ($scope, $loc
                     r: R,
                     alpha: 1,
                     phase: randomNumFrom(0, 10)
-                }
+                };
                 break;
             case 'left':
                 return {
@@ -118,7 +122,7 @@ app.controller("EnterController", ["$scope", "$location", function ($scope, $loc
                     r: R,
                     alpha: 1,
                     phase: randomNumFrom(0, 10)
-                }
+                };
                 break;
         }
     }
@@ -275,4 +279,4 @@ app.controller("EnterController", ["$scope", "$location", function ($scope, $loc
 
 
 
-}])
+}]);
