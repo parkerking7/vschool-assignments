@@ -1,3 +1,37 @@
+/*This can be applied to all*/
+.progress-slider{
+    -webkit-appearance: none;
+}
+
+.progress-slider::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+/*^^^^^^*/
+/*You can give each one it's induvidal color here with backgrounds*/
+.progress-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+
+    margin-top: -4px;
+}
+.progress-slider::-webkit-slider-thumb {
+	background:red;
+}
+
+
+/*
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+*/
+
 h1{
     text-align: center;
     text-decoration: underline;

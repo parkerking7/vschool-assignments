@@ -77,12 +77,94 @@ article {
 	text-align: center;
 }
 
-.date {
+.dateDiv {
+	width: 100%;
+	height: 50px;
+	margin: 50px 0;
+	text-align: center;
+	position: relative;
+	background-color:white;
+}
+.dateDiv:after {
+	content: '';
+	width: 100%;
+	border-bottom: solid 1px lightgray;
+	position: absolute;
+	left: 0;
+	top: 20%;
+	z-index: 1;
+}
+.date{
 	font-size: 14px;
 	font-weight: 300;
-	word-spacing: 4px;
+	letter-spacing: 2px;
+	background-color: white; /* Same as the parents Background */
+	width: auto;
+	display: inline-block;
+	z-index: 3;
+	padding: 0 20px 0 20px;
+	color: lightGray;
+	position: relative;
+	margin: 0;
 }
-
+.art-social{
+	margin-right:15px;
+	font-size:30px;
+	color:#F3C3AC;
+}
+.comments{
+	font-size:12px;
+}
+.reading{
+	height:100px;
+	padding-top: 40px;
+}
+.related-border{
+	margin-bottom: 0px !important;
+	width: 100%;
+	height: 50px;
+	margin: 50px 0;
+	text-align: center;
+	position: relative;
+	background-color:white;
+}
+.related-border::after{
+	content: '';
+	width: 100%;
+	border-bottom: solid 1px black;
+	position: absolute;
+	left: 0;
+	top: 20%;
+	z-index: 1;
+}
+.related{
+	font-weight: 100;
+	letter-spacing: 2px;
+	background-color: white; /* Same as the parents Background */
+	width: auto;
+	display: inline-block;
+	z-index: 3;
+	padding: 0 20px 0 20px;
+	color: black;
+	position: relative;
+	margin: 0;
+}
+.bottom-line{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	background-color:white;
+}
+.bottom-line::after{
+	content: '';
+	width: 100%;
+	border-bottom: solid 1px black;
+	position: absolute;
+	left: 0;
+	top: 20%;
+	z-index: 1;
+}
 .headline {
 	letter-spacing: 10px;
 	font-weight: 300
@@ -94,4 +176,91 @@ article {
 
 .headline-para {
 	text-align: left;
+}
+
+.socialImgs{
+	float:left;
+}
+.comments{
+	float:right;
+}
+.readMore{
+	padding-left:20px;
+	padding-right:20px;
+	font-weight:200;
+	margin-top:20px;
+	height:25px;
+	border:1px lightgray solid;
+	padding-top:10px;
+	padding-bottom: 10px;
+	font-size:15px;
+	color:lightgray;
+}
+.readMore:hover{
+	text-decoration: none;
+	background-color:lightgray;
+	color:white;
+}
+.follow{
+	font-weight: 300;
+	margin-top:-9px;
+	letter-spacing: 2px;
+	/*background-color:white;*/
+}
+.follow-box{
+	margin-top:175px;
+	border: 1px solid lightgray;
+}
+.following{
+	color:black;
+	margin-right:15px;
+	margin-bottom: 10px;
+}
+.subscribe{
+	font-weight: 300;
+	margin-top:-9px;
+	letter-spacing: 2px;
+	/*background-color:white;*/
+}
+.sub-box{
+	margin-top:25px;
+	border: 1px solid lightgray;
+}
+.sub-email{
+	margin-left:0px;
+	margin-top:-7px;
+	float:left;
+	width:200px;
+	border:0px white solid;
+}
+.sub-field{
+	margin-bottom:10px;
+}
+.sub-sign{
+	margin-top:-7px;
+
+}
+.wishlist{
+	font-weight: 300;
+	margin-top:-9px;
+	letter-spacing: 2px;
+	/*background-color:white;*/
+}
+.wish-box{
+	margin-top:25px;
+	border: 1px solid lightgray;
+}
+.favorites{
+	 font-weight: 300;
+	 margin-top:-9px;
+	 letter-spacing: 2px;
+	 /*background-color:white;*/
+ }
+.fav-box{
+	margin-top:25px;
+	border: 1px solid lightgray;
+}
+.fav-imgs{
+	width:100%;
+	padding:5px;
 }
