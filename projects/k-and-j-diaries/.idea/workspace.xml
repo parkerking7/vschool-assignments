@@ -20,8 +20,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
+                <state relative-caret-position="308">
+                  <caret line="118" column="55" lean-forward="true" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="56" />
                   <folding>
                     <element signature="e#75#80#0" expanded="true" />
                   </folding>
@@ -139,12 +139,12 @@
       <option name="presentableId" value="Default" />
       <updated>1492186320961</updated>
       <workItem from="1492186322399" duration="158000" />
-      <workItem from="1492715137919" duration="5043000" />
+      <workItem from="1492715137919" duration="5350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5201000" />
+    <option name="totallyTimeSpent" value="5508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="989" height="988" extended-state="0" />
@@ -189,21 +189,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-          <folding>
-            <element signature="e#75#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="210" column="18" lean-forward="false" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="118" column="55" lean-forward="true" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="56" />
+          <folding>
+            <element signature="e#75#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

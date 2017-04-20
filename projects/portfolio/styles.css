@@ -56,7 +56,9 @@ body {
 .portfolio p {
 	color: darkseagreen;
 }
-
+.port-works{
+	color:white;
+}
 .draw {
 	position: relative;
 	vertical-align: middle;
@@ -166,7 +168,9 @@ ul.nav a:hover {
 	background: url("pictures/IMG_3692.JPG");
 	filter: grayscale(100%);
 	background-attachment: scroll;
-	background-size: cover
+	background-size: cover;
+	margin-right:-15px;
+
 }
 
 .aboutText h1 {
@@ -178,7 +182,9 @@ ul.nav a:hover {
 .aboutText p {
 	font-size: 14px;
 }
-
+.aboutText{
+	color:white;
+}
 @media screen and (max-width: 700px) {
 	.aboutText h1 {
 		margin-bottom: 0
@@ -199,6 +205,7 @@ ul.nav a:hover {
 @media screen and (min-width: 1200px) {
 	#footer p {
 		line-height: 100px;
+
 	}
 }
 
@@ -211,6 +218,7 @@ ul.nav a:hover {
 		width: 100%;
 		background: #999;
 		z-index: 9;
+
 	}
 }
 
@@ -223,6 +231,7 @@ ul.nav a:hover {
 		width: 100%;
 		background: #999;
 		z-index: 9;
+
 	}
 }
 
@@ -273,4 +282,22 @@ ul.nav a:hover {
 	border-radius: 100%;
 	border-radius: 0;
 	z-index: 9;
+}
+
+#worksHeader{
+	height: 500px;
+	background: url("pictures/codingBackground.jpg");
+	background-attachment: scroll;
+	background-size: cover;
+	margin-right:-15px;
+
+}
+.stackImgs{
+	width:100%;
+}
+.worksImg{
+	width:100%;
+}
+.images{
+	margin-top:100px;
 }
