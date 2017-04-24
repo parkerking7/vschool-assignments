@@ -201,10 +201,14 @@ ul.nav a:hover {
 	backface-visibility: visible;
 }
 /*This is the code for the footer!*/
-
+#footer{
+	margin-right: -15px;
+}
 @media screen and (min-width: 1200px) {
 	#footer p {
 		line-height: 100px;
+		z-index: 100;
+
 
 	}
 }
@@ -217,7 +221,7 @@ ul.nav a:hover {
 		height: 100px;
 		width: 100%;
 		background: #999;
-		z-index: 9;
+		/*z-index: 9;*/
 
 	}
 }
@@ -230,7 +234,7 @@ ul.nav a:hover {
 		height: 100px;
 		width: 100%;
 		background: #999;
-		z-index: 9;
+		/*z-index: 9;*/
 
 	}
 }
@@ -240,7 +244,7 @@ ul.nav a:hover {
 	bottom: 0;
 	height: 158px;
 	width: 100%;
-	z-index: 9;
+	z-index: -1;
 }
 
 .links {
@@ -257,16 +261,16 @@ ul.nav a:hover {
 }
 
 .gitImg {
-	background: transparent;
-	border-radius: 10px transition-property: background, border-radius;
+	background: #999;
+	border-radius: 50%;
 	transition: all 1s ease-in-out;
-	transition-timing-function: linear;
 	z-index: 9;
 }
 
 .gitImg:hover {
-	background: #999;
-	border-radius: 50%;
+	background: ##999;
+	border-radius: 100%;
+	border-radius: 0;
 	z-index: 9;
 }
 
@@ -294,10 +298,40 @@ ul.nav a:hover {
 }
 .stackImgs{
 	width:100%;
+	height:224px;
+	overflow:auto;
+	background:#fff;
+}
+.worksImgContainer{
+	height: 250px;
+	width:100%;
 }
 .worksImg{
-	width:100%;
+	/*width:45em;*/
 }
 .images{
 	margin-top:100px;
+}
+.resume{
+	color:white !important;
+}
+.resume a{
+	color:white;
+}
+.resume:hover{
+	text-decoration: underline !important;
+	cursor: pointer;
+	color: white !important;
+}
+.worksHead a{
+	color:whitesmoke;
+}
+.worksHead:hover{
+	cursor:pointer;
+}
+.workText{
+	color:whitesmoke;
+}
+.blacktext{
+	color:black;
 }
